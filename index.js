@@ -200,7 +200,7 @@ function animate() {
   ) {
     player.takeHit();
     enemy.isAttacking = false;
-    gsap.to('#playerHealth',{width:enemy.health + '%'}) 
+    gsap.to('#playerHealth',{width:player.health + '%'}) 
    }
   if (enemy.isAttacking && enemy.framesCurrent === 2) {
     enemy.isAttacking = false;
